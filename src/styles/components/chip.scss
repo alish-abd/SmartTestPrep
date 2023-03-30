@@ -1,0 +1,53 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.chip {
+  @include shadow;
+  @include vertical-stack;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+
+  &__name {
+    font-size: 20px;
+    margin: 0;
+    text-align: start;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin: 0;
+    text-align: start;
+  }
+
+  &__tier {
+    font-size: 14px;
+    margin: 0;
+    text-align: start;
+    color: $greySecondary;
+  }
+
+  &__type {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0;
+    border: 1px solid $greyBorder;
+    border-radius: 99px;
+  }
+}
+
+.chip-delete {
+  background-color: rgb(255, 55, 55);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px;
+}
+
+p {
+  margin: 0;
+}

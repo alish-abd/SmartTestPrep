@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.header {
+  @include horizontal-stack;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-items {
+  @include horizontal-stack;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-item {
+  color: $greySecondary;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #51606f;
+  border-radius: 40px;
+}

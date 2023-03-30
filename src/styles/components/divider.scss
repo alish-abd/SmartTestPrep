@@ -1,0 +1,9 @@
+@import "../abstracts/variables";
+
+.divider {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: $lightDivider;
+  text-align: left;
+}

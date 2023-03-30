@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.layout {
+  @include horizontal-stack;
+  gap: 32px;
+  margin: 24px 32px;
+  align-items: flex-start;
+}
+
+.header-contnent {
+  @include vertical-stack;
+  width: 100%;
+  margin-left: 256px;
+}

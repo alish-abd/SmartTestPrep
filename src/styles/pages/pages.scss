@@ -1,0 +1,30 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.page-layout {
+  @include vertical-stack;
+  align-items: flex-start;
+  gap: 56px;
+
+  &__title {
+    @include mainFont;
+    color: $darkHeading;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    @include mainFont;
+    color: $darkHeading;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  &__card {
+    @include vertical-stack;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

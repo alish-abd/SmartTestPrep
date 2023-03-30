@@ -1,0 +1,43 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.radio_container {
+  @include shadow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $lightDivider;
+  width: 140px;
+  height: 40px;
+  border-radius: 9999px;
+
+  &__input[type="radio"] {
+    appearance: none;
+    display: none;
+  }
+
+  &__label {
+    @include mainFont;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 9999px;
+    overflow: hidden;
+    transition: linear 0.1s;
+    color: $greySecondary;
+  }
+}
+
+input[type="radio"]:checked + label {
+  @include mainFont;
+  background-color: $lightWhite;
+  color: $darkSwitch;
+  font-weight: 900;
+  transition: 0.3s;
+}

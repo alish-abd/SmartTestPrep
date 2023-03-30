@@ -1,0 +1,15 @@
+@import "../abstracts/mixins";
+
+.sidebar {
+  position: fixed;
+  @include vertical-stack();
+  gap: 32px;
+  align-items: left;
+  max-width: 256px;
+}
+
+.menu-items {
+  @include vertical-stack();
+  gap: 10px;
+  align-items: flex-start;
+}

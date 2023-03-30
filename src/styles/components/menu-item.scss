@@ -1,0 +1,15 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.menu-item {
+  @include horizontal-stack;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.active {
+  background-color: $lightPrimary;
+  color: $lightWhite;
+}
